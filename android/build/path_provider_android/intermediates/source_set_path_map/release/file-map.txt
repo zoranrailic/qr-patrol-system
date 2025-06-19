@@ -1,0 +1,12 @@
+io.flutter.plugins.pathprovider.path_provider_android-pngs-0 C:\SafetyProQR\build\path_provider_android\generated\res\pngs\release
+io.flutter.plugins.pathprovider.path_provider_android-resValues-1 C:\SafetyProQR\build\path_provider_android\generated\res\resValues\release
+io.flutter.plugins.pathprovider.path_provider_android-rs-2 C:\SafetyProQR\build\path_provider_android\generated\res\rs\release
+io.flutter.plugins.pathprovider.path_provider_android-mergeReleaseResources-3 C:\SafetyProQR\build\path_provider_android\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.pathprovider.path_provider_android-mergeReleaseResources-4 C:\SafetyProQR\build\path_provider_android\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.pathprovider.path_provider_android-merged_res-5 C:\SafetyProQR\build\path_provider_android\intermediates\merged_res\release
+io.flutter.plugins.pathprovider.path_provider_android-jetified-window-java-1.0.0-beta04-6 C:\Users\zoran\.gradle\caches\transforms-3\30ec800b1b8f3ca2baee72a4b52457db\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.pathprovider.path_provider_android-jetified-window-1.0.0-beta04-7 C:\Users\zoran\.gradle\caches\transforms-3\3dbebd5242a81af5822d1269643cf575\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.pathprovider.path_provider_android-jetified-annotation-experimental-1.1.0-8 C:\Users\zoran\.gradle\caches\transforms-3\7e939dececef34241e4324a8dac78035\transformed\jetified-annotation-experimental-1.1.0\res
+io.flutter.plugins.pathprovider.path_provider_android-core-1.6.0-9 C:\Users\zoran\.gradle\caches\transforms-3\ae648419ad9536ae266b7f848734d750\transformed\core-1.6.0\res
+io.flutter.plugins.pathprovider.path_provider_android-main-10 C:\Users\zoran\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.5\android\src\main\res
+io.flutter.plugins.pathprovider.path_provider_android-release-11 C:\Users\zoran\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.5\android\src\release\res

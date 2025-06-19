@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the scan method from the AttendancePageState class, for the Dart programming language.">
+  <title>scan method - AttendancePageState class - attendance_page library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">attendancewithqr</a></li>
+    <li><a href="../../screen_attendance_page/screen_attendance_page-library.html">attendance_page</a></li>
+    <li><a href="../../screen_attendance_page/AttendancePageState-class.html">AttendancePageState</a></li>
+    <li class="self-crumb">scan method</li>
+  </ol>
+  <div class="self-name">scan</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span class="material-symbols-outlined">
+        brightness_4
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">scan</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+<span class="name ">scan</span>(<wbr>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Scan the QR name of user</p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;void&gt; scan() async {
+  try {
+    final barcode = await BarcodeScanner.scan();
+
+    &#47;&#47;&#47; The value of Qr Code
+    if (barcode.rawContent != &#39;&#39;) {
+      setState(() {
+        &#47;&#47;&#47; Show dialog
+        pr.show();
+
+        &#47;&#47;&#47; Get name from QR
+        getQrId = barcode.rawContent;
+
+        &#47;&#47;&#47; Sending the data
+        sendData();
+      });
+    }
+
+    &#47;&#47;&#47;-- Optional if you want to show message when user click back button or cancel button, then uncomment this code --
+    &#47;&#47;&#47; else {
+    &#47;&#47;&#47;   utils.showAlertDialog(
+    &#47;&#47;&#47;       &#39;$barcode_empty&#39;, &quot;Error&quot;, AlertType.error, _scaffoldKey, true);
+    &#47;&#47;&#47; }
+  } on PlatformException catch (e) {
+    if (e.code == BarcodeScanner.cameraAccessDenied) {
+      _barcode = cameraPermission;
+      utils.showAlertDialog(
+        _barcode,
+        &quot;Warning&quot;,
+        AlertType.warning,
+        _scaffoldKey,
+        isAnyButton: true,
+      );
+    } else {
+      _barcode = &#39;$barcodeUnknownError $e&#39;;
+      utils.showAlertDialog(
+        _barcode,
+        &quot;Error&quot;,
+        AlertType.error,
+        _scaffoldKey,
+        isAnyButton: true,
+      );
+    }
+  } catch (e) {
+    _barcode = &#39;$barcodeUnknownError : $e&#39;;
+    if (kDebugMode) {
+      print(_barcode);
+    }
+  }
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">attendancewithqr</a></li>
+  <li><a href="../../screen_attendance_page/screen_attendance_page-library.html">attendance_page</a></li>
+  <li><a href="../../screen_attendance_page/AttendancePageState-class.html">AttendancePageState</a></li>
+  <li class="self-crumb">scan method</li>
+</ol>
+
+
+    <h5>AttendancePageState class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../screen_attendance_page/AttendancePageState-class.html#constructors">Constructors</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/AttendancePageState.html">AttendancePageState</a></li>
+
+
+        <li class="section-title">
+          <a href="../../screen_attendance_page/AttendancePageState-class.html#instance-properties">Properties</a>
+        </li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/clickButton.html">clickButton</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/context.html">context</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/dbHelper.html">dbHelper</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/geoLocator.html">geoLocator</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/getKey.html">getKey</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/getPath.html">getPath</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/getQrId.html">getQrId</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/getQuery.html">getQuery</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/getUrl.html">getUrl</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/mAccuracy.html">mAccuracy</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/mounted.html">mounted</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/pr.html">pr</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/setAccuracy.html">setAccuracy</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/settings.html">settings</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/subscription.html">subscription</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/utils.html">utils</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/widget.html">widget</a></li>
+
+        <li class="section-title"><a href="../../screen_attendance_page/AttendancePageState-class.html#instance-methods">Methods</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/activate.html">activate</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/build.html">build</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/checkMockIsNull.html">checkMockIsNull</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/checkMockLoc.html">checkMockLoc</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/deactivate.html">deactivate</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/debugFillProperties.html">debugFillProperties</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/didChangeDependencies.html">didChangeDependencies</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/didUpdateWidget.html">didUpdateWidget</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/dispose.html">dispose</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/getSettings.html">getSettings</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/initState.html">initState</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/insertAttendance.html">insertAttendance</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/reassemble.html">reassemble</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/scan.html">scan</a></li>
+          <li><a href="../../screen_attendance_page/AttendancePageState/sendData.html">sendData</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/setState.html">setState</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toStringShort.html">toStringShort</a></li>
+
+        <li class="section-title inherited"><a href="../../screen_attendance_page/AttendancePageState-class.html#operators">Operators</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    attendancewithqr
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

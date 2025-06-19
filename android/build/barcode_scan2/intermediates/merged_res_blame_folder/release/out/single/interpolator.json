@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/mtrl_fast_out_slow_in.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/interpolator/mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-appcompat-1.1.0-9:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/mtrl_linear_out_slow_in.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/interpolator/mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/mtrl_fast_out_linear_in.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/interpolator/mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-appcompat-1.1.0-9:/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/fast_out_slow_in.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-appcompat-1.1.0-9:/interpolator/fast_out_slow_in.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-appcompat-1.1.0-9:/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-appcompat-1.1.0-9:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-appcompat-1.1.0-9:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/mtrl_linear.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/interpolator/mtrl_linear.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-appcompat-1.1.0-9:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
+    }
+]

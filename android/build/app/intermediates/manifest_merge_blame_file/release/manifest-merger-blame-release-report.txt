@@ -1,0 +1,218 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vafgroup.attendancewithqr"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml
+10    <!--
+11         io.flutter.app.FlutterApplication is an android.app.Application that
+12         calls FlutterMain.startInitialization(this); in its onCreate method.
+13         In most cases you can leave this as-is, but you if you want to provide
+14         additional functionality it is fine to subclass or reimplement
+15         FlutterApplication and put your custom class here.
+16    -->
+17
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:9:5-67
+18-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:9:22-64
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:10:5-65
+19-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:10:22-62
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:11:5-79
+20-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:11:22-76
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:12:5-81
+21-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:12:22-78
+22
+23    <permission
+23-->[androidx.core:core:1.13.0] C:\Users\zoran\.gradle\caches\transforms-3\f536fd6fcfc33ba5815491b9df2f5c76\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+24        android:name="com.vafgroup.attendancewithqr.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.13.0] C:\Users\zoran\.gradle\caches\transforms-3\f536fd6fcfc33ba5815491b9df2f5c76\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.13.0] C:\Users\zoran\.gradle\caches\transforms-3\f536fd6fcfc33ba5815491b9df2f5c76\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.vafgroup.attendancewithqr.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.13.0] C:\Users\zoran\.gradle\caches\transforms-3\f536fd6fcfc33ba5815491b9df2f5c76\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.13.0] C:\Users\zoran\.gradle\caches\transforms-3\f536fd6fcfc33ba5815491b9df2f5c76\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:14:5-53:19
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.13.0] C:\Users\zoran\.gradle\caches\transforms-3\f536fd6fcfc33ba5815491b9df2f5c76\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+31        android:icon="@mipmap/launcher_icon"
+31-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:17:9-45
+32        android:label="SafetyPro QR"
+32-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:15:9-37
+33        android:usesCleartextTraffic="true" >
+33-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:16:9-44
+34        <activity
+34-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:18:9-47:20
+35            android:name="com.vafgroup.attendancewithqr.MainActivity"
+35-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:19:13-41
+36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:22:13-163
+37            android:exported="true"
+37-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:25:13-36
+38            android:hardwareAccelerated="true"
+38-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:23:13-47
+39            android:launchMode="singleTop"
+39-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:20:13-43
+40            android:theme="@style/LaunchTheme"
+40-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:21:13-47
+41            android:windowSoftInputMode="adjustResize" >
+41-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:24:13-55
+42
+43            <!--
+44                 Specifies an Android theme to apply to this Activity as soon as
+45                 the Android process has started. This theme is visible to the user
+46                 while the Flutter UI initializes. After that, this theme continues
+47                 to determine the Window background behind the Flutter UI.
+48            -->
+49            <meta-data
+49-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:30:13-33:17
+50                android:name="io.flutter.embedding.android.NormalTheme"
+50-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:31:15-70
+51                android:resource="@style/NormalTheme" />
+51-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:32:15-52
+52            <!--
+53                 Displays an Android View that continues showing the launch screen
+54                 Drawable until Flutter paints its first frame, then this splash
+55                 screen fades out. A splash screen is useful to avoid any visual
+56                 gap between the end of Android's launch screen and the painting of
+57                 Flutter's first frame.
+58            -->
+59            <meta-data
+59-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:39:13-42:17
+60                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+60-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:40:15-79
+61                android:resource="@drawable/launch_background" />
+61-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:41:15-61
+62
+63            <intent-filter>
+63-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:43:13-46:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:44:17-68
+64-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:44:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:45:17-76
+66-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:45:27-74
+67            </intent-filter>
+68        </activity>
+69        <!--
+70             Don't delete the meta-data below.
+71             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+72        -->
+73        <meta-data
+73-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:50:9-52:33
+74            android:name="flutterEmbedding"
+74-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:51:13-44
+75            android:value="2" />
+75-->C:\SafetyProQR\android\app\src\main\AndroidManifest.xml:52:13-30
+76
+77        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
+77-->[:barcode_scan2] C:\SafetyProQR\build\barcode_scan2\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-84
+77-->[:barcode_scan2] C:\SafetyProQR\build\barcode_scan2\intermediates\merged_manifest\release\AndroidManifest.xml:12:19-81
+78
+79        <service
+79-->[:geolocator_android] C:\SafetyProQR\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:56
+80            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+80-->[:geolocator_android] C:\SafetyProQR\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
+81            android:enabled="true"
+81-->[:geolocator_android] C:\SafetyProQR\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-35
+82            android:exported="false"
+82-->[:geolocator_android] C:\SafetyProQR\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+83            android:foregroundServiceType="location" />
+83-->[:geolocator_android] C:\SafetyProQR\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-53
+84
+85        <uses-library
+85-->[androidx.window:window:1.0.0-beta04] C:\Users\zoran\.gradle\caches\transforms-3\3dbebd5242a81af5822d1269643cf575\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+86            android:name="androidx.window.extensions"
+86-->[androidx.window:window:1.0.0-beta04] C:\Users\zoran\.gradle\caches\transforms-3\3dbebd5242a81af5822d1269643cf575\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+87            android:required="false" />
+87-->[androidx.window:window:1.0.0-beta04] C:\Users\zoran\.gradle\caches\transforms-3\3dbebd5242a81af5822d1269643cf575\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+88        <uses-library
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\zoran\.gradle\caches\transforms-3\3dbebd5242a81af5822d1269643cf575\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+89            android:name="androidx.window.sidecar"
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\zoran\.gradle\caches\transforms-3\3dbebd5242a81af5822d1269643cf575\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+90            android:required="false" />
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\zoran\.gradle\caches\transforms-3\3dbebd5242a81af5822d1269643cf575\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+91
+92        <activity
+92-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\zoran\.gradle\caches\transforms-3\498f45c3909a69b3bcfa33b020cbaa60\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+93-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\zoran\.gradle\caches\transforms-3\498f45c3909a69b3bcfa33b020cbaa60\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+94            android:exported="false"
+94-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\zoran\.gradle\caches\transforms-3\498f45c3909a69b3bcfa33b020cbaa60\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+95-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\zoran\.gradle\caches\transforms-3\498f45c3909a69b3bcfa33b020cbaa60\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+96
+97        <meta-data
+97-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\zoran\.gradle\caches\transforms-3\9a1d28158961ce4ec7cb8977fab568cb\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+98            android:name="com.google.android.gms.version"
+98-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\zoran\.gradle\caches\transforms-3\9a1d28158961ce4ec7cb8977fab568cb\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+99            android:value="@integer/google_play_services_version" />
+99-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\zoran\.gradle\caches\transforms-3\9a1d28158961ce4ec7cb8977fab568cb\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+100
+101        <provider
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+102            android:name="androidx.startup.InitializationProvider"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+103            android:authorities="com.vafgroup.attendancewithqr.androidx-startup"
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+104            android:exported="false" >
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+105            <meta-data
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+107                android:value="androidx.startup" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+108        </provider>
+109
+110        <receiver
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+111            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+112            android:directBootAware="false"
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+113            android:enabled="true"
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+114            android:exported="true"
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+115            android:permission="android.permission.DUMP" >
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+117                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+118            </intent-filter>
+119            <intent-filter>
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+120                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+121            </intent-filter>
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+123                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+124            </intent-filter>
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+126                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zoran\.gradle\caches\transforms-3\89ea6012f3f8ad866121a962abc9fceb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+127            </intent-filter>
+128        </receiver>
+129    </application>
+130
+131</manifest>

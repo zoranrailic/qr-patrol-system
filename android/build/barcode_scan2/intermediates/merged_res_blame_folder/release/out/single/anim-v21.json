@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/anim-v21/mtrl_bottom_sheet_slide_in.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/anim-v21/mtrl_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/anim-v21/mtrl_bottom_sheet_slide_out.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/anim-v21/mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/anim-v21/design_bottom_sheet_slide_in.xml"
+    }
+]

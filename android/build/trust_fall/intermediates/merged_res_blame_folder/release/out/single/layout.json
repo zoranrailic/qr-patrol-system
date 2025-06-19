@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.anish.trust_fall-merged_res-4:/layout/custom_dialog.xml",
+        "source": "com.anish.trust_fall-core-1.6.0-8:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.anish.trust_fall-merged_res-4:/layout/notification_template_part_chronometer.xml",
+        "source": "com.anish.trust_fall-core-1.6.0-8:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.anish.trust_fall-merged_res-4:/layout/notification_template_icon_group.xml",
+        "source": "com.anish.trust_fall-core-1.6.0-8:/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.anish.trust_fall-merged_res-4:/layout/notification_template_part_time.xml",
+        "source": "com.anish.trust_fall-core-1.6.0-8:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.anish.trust_fall-merged_res-4:/layout/notification_action.xml",
+        "source": "com.anish.trust_fall-core-1.6.0-8:/layout/notification_action.xml"
+    },
+    {
+        "merged": "com.anish.trust_fall-merged_res-4:/layout/notification_action_tombstone.xml",
+        "source": "com.anish.trust_fall-core-1.6.0-8:/layout/notification_action_tombstone.xml"
+    }
+]

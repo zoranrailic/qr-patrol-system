@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/drawable-v23/abc_control_background_material.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-appcompat-1.1.0-9:/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "de.mintware.barcode_scan.barcode_scan2-merged_res-4:/drawable-v23/mtrl_popupmenu_background_dark.xml",
+        "source": "de.mintware.barcode_scan.barcode_scan2-material-1.1.0-17:/drawable-v23/mtrl_popupmenu_background_dark.xml"
+    }
+]

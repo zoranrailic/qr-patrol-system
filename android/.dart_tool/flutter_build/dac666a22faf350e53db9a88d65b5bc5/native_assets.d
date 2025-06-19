@@ -1,0 +1,1 @@
+ C:\\SafetyProQR\\.dart_tool\\flutter_build\\dac666a22faf350e53db9a88d65b5bc5\\native_assets.yaml: 
